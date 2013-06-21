@@ -2,14 +2,14 @@
 import urllib, json
 from bs4 import BeautifulSoup
 from pymongo import MongoClient
-from jarvis import configuration
+from lisa import configuration
 
 class SNCF:
     def __init__(self):
-        self.configuration_jarvis = configuration
-        mongo = MongoClient(self.configuration_jarvis['database']['server'], \
-                            self.configuration_jarvis['database']['port'])
-        self.configuration = mongo.jarvis.plugins.find_one({"name": "SNCF"})
+        self.configuration_lisa = configuration
+        mongo = MongoClient(self.configuration_lisa['database']['server'], \
+                            self.configuration_lisa['database']['port'])
+        self.configuration = mongo.lisa.plugins.find_one({"name": "SNCF"})
 
     def getTrains(self):
         #lxml improve speed but need to be installed
