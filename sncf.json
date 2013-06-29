@@ -1,10 +1,12 @@
 {
     "name": "SNCF",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "author": "Julien Syx",
     "enabled": 1,
     "lang": ["fr"],
-    "description_fr": "Ce plugin permet d'interroger l'état du trafic transilien",
+    "description": [
+        {"description_fr": "Ce plugin permet d'interroger l'état du trafic transilien"}
+    ],
     "configuration": {
         "url": "http://www.transilien.com/flux/rss/trafic",
         "lignes": [
