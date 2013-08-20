@@ -17,7 +17,7 @@ class SNCF:
                             self.configuration_lisa['database']['port'])
         self.configuration = mongo.lisa.plugins.find_one({"name": "SNCF"})
 
-    def getTrains(self):
+    def getTrains(self, jsonInput):
         #lxml improve speed but need to be installed
         #soup = BeautifulSoup(urllib.urlopen(configuration['url'],"lxml"))
         soup = BeautifulSoup(urllib.urlopen(self.configuration['configuration']['url']))
