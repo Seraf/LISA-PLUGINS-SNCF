@@ -28,8 +28,11 @@ class SNCF:
                 if ligne['name'] in problem.get_text() and ligne['enabled'] == 'True':
                     list_problem_filter.append(unicode(problem.get_text()))
         if not list_problem_filter:
-            return json.dumps({"plugin": "sncf","method": "getTrains",
-                               "body": _('no_problem')})
+            return {"plugin": "sncf",
+                    "method": "getTrains",
+                    "body": _('no_problem')
+            }
         else:
-            return json.dumps({"plugin": "sncf","method": "getTrains",
-                               "body": _(' then ').join(list_problem_filter)})
+            return {"plugin": "sncf",
+                    "method": "getTrains",
+                    "body": _(' then ').join(list_problem_filter)}

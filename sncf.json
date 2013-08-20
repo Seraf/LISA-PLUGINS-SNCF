@@ -1,6 +1,6 @@
 {
     "name": "SNCF",
-    "version": "1.0.13",
+    "version": "1.2.0",
     "author": "Julien Syx",
     "enabled": 1,
     "lang": ["fr"],
@@ -8,6 +8,15 @@
         {"lang": "fr", "description": "Ce plugin permet d'interroger l'état du trafic transilien"}
     ],
     "configuration": {
+        "intents": {
+            "sncf_traffic": {
+                "method": "getTrains",
+                "corpus": {}
+            }
+        },
+        "widgets": {
+            "getTraffic": "SNCF.web.views.getTraffic"
+        },
         "url": "http://www.transilien.com/flux/rss/trafic",
         "lignes": [
             {"name": "RER A", "enabled": "False"},
