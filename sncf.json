@@ -1,6 +1,6 @@
 {
     "name": "SNCF",
-    "version": "1.2.1",
+    "version": "1.2.3",
     "author": "Julien Syx",
     "enabled": 1,
     "lang": ["fr"],
