@@ -1,9 +1,11 @@
 {
     "name": "SNCF",
-    "version": "1.2.5",
+    "version": "1.0.0",
     "author": "Julien Syx",
     "enabled": 1,
     "lang": ["fr"],
+    "pypi-url": "https://pypi.python.org/pypi/lisa-plugin-SNCF",
+    "github-url": "https://raw.githubusercontent.com/Seraf/LISA-PLUGINS-SNCF/master/lisa/plugins/SNCF/sncf.json",
     "description": [
         {"lang": "fr", "description": "Ce plugin permet d'interroger l'état du trafic transilien"}
     ],
